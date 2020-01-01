@@ -1,0 +1,18 @@
+def coumputepay(hours , rate) :
+    print("In coumputepay")
+
+
+sh = input("enter Hour")
+sr = input("enter Rate")
+
+fh = float(sh)
+fr = float(sr)
+
+if fh > 40 :
+    reg = fr * fh
+    opt = (fh - 40.0) * (fh * .05)
+
+    xp = reg + opt
+else :
+    xp = fh * fr
+    print ("pay :"  , xp)
